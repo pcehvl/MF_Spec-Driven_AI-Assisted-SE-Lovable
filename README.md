@@ -1,3 +1,5 @@
+[← MakersForge 2026 – all tracks](https://pcehvl.github.io/MakersForge-2026/)
+
 # Beyond Vibe Coding – From Concept to MVP with Lovable
 
 **Spec-driven, AI-assisted software engineering with agents – the Lovable track.**
