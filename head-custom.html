@@ -1,0 +1,15 @@
+<!-- Make Markdown task-list checkboxes clickable and remember ticks per browser -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var boxes = document.querySelectorAll('input.task-list-item-checkbox');
+  boxes.forEach(function (box, i) {
+    var key = 'checklist:' + location.pathname + ':' + i;
+    box.removeAttribute('disabled');
+    box.style.cursor = 'pointer';
+    try { box.checked = localStorage.getItem(key) === '1'; } catch (e) {}
+    box.addEventListener('change', function () {
+      try { localStorage.setItem(key, box.checked ? '1' : '0'); } catch (e) {}
+    });
+  });
+});
+</script>
