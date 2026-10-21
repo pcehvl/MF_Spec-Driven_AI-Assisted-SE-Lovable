@@ -27,7 +27,7 @@ This track uses the same method as the [main course page](https://pcehvl.github.
 | The two loops | [workflow.md](workflow.md) | Commands, artefacts, the handover and the return, step by step |
 | Template | [MF-MyMVP-Lovable-Template](https://github.com/pcehvl/MF-MyMVP-Lovable-Template) | The harness you build your own MVP with |
 | Lovable skills | [Releases](https://github.com/pcehvl/MF-MyMVP-Lovable-Template/releases) | One ZIP per Lovable skill, to import into your Lovable workspace |
-| Slides, notes, videos | [Main course page](https://pcehvl.github.io/MF_Spec-Driven_AI-Assisted-SE/) | The lecture itself. Parts 01–04 apply unchanged; part 05 and demos 3–4 show the local OpenCode execution loop, which Lovable replaces here |
+| Slides, notes, videos | [Main course page](https://pcehvl.github.io/MF_Spec-Driven_AI-Assisted-SE/) | The lecture itself. Parts 01–04 apply unchanged; part 05 and demos 3–4 show the local OpenCode execution loop, which Lovable replaces here. Part 06 shows the take-home harness for both tracks |
 
 ---
 
@@ -67,7 +67,7 @@ Only two things cross between the loops: a **handover** (`product.md` + one read
 
 ## The MVP playbook in seven steps
 
-One story at a time, through both loops.
+One story at a time, through both loops. The same seven steps as in the main track; only the tools in the execution loop differ.
 
 **Product loop – in OpenCode. The Product Assistant drafts, you decide as Product Owner**
 
@@ -83,6 +83,35 @@ One story at a time, through both loops.
 7. **Accept, publish, learn** – run `/accept-story US-XXX` and answer PASS or FAIL per `ACn`, then `/publish`. Back in OpenCode, run `/return US-XXX`: the story becomes `done`, and feedback becomes new or revised stories.
 
 > Generated code alone is never Done. The PO accepts in Lovable, and the Story is marked `done` in the product repo only after the return.
+
+---
+
+## Your take-home harness
+
+A product repo in OpenCode, the app in Lovable. Start from [MF-MyMVP-Lovable-Template](https://github.com/pcehvl/MF-MyMVP-Lovable-Template).
+
+```text
+your-mvp/
+├─ AGENTS.md · opencode.json
+├─ product/
+│  ├─ product.md
+│  └─ stories/US-XXX-<slug>/   spec.md · acceptance.md
+├─ docs/
+│  └─ design-thinking/
+├─ .opencode/                  agents/ · skills/
+└─ lovable/
+   ├─ skills/
+   └─ workspace-knowledge.md
+```
+
+App code lives in the Lovable project, not in this repo.
+
+| Where | Loop | What it holds |
+| --- | --- | --- |
+| `product/` | Product (shared) | `product.md` and one folder per story: `spec.md` goes out, `acceptance.md` comes back. Plan and verification stay in Lovable |
+| `.opencode/` | Product, in OpenCode | The Product Assistant drafts the specs. `/handover` sends `spec.md` to Lovable, `/return` brings `acceptance.md` back |
+| `lovable/skills/` | Execution, in Lovable | `/harness-init`, `/build-story`, `/accept-story` and `/publish`, imported once per workspace |
+| `lovable/workspace-knowledge.md` | Rules for Lovable | Pasted into workspace knowledge, so Lovable follows the same rules. It builds and checks each `ACn` on the preview |
 
 ---
 
