@@ -49,16 +49,12 @@ You act as Product Owner (PO) in both. The agents draft and build; you decide an
 | Account | Where | Cost | Notes |
 | --- | --- | --- | --- |
 | GitHub | [github.com/signup](https://github.com/signup) | Free | Apply for the [GitHub Student Developer Pack](https://education.github.com/pack) with your student email. |
-| OpenCode (course workspace) | Invitation email → [opencode.ai](https://opencode.ai) | Free (paid by the course) | Accept the invitation before the first session. See below. |
+| OpenCode | [opencode.ai](https://opencode.ai) | Free with free models | Sign in when you run `/connect` in OpenCode. Paid models are optional and at your own cost. See below. |
 | Lovable | [lovable.dev](https://lovable.dev) | Free plan, or a paid plan for more credits | Every message to Lovable costs credits, including each handover. *[Lecturer: add how students get credits or a shared workspace, if any.]* |
 
-**Join the OpenCode course workspace (recommended).** The course has a shared workspace in OpenCode that gives you access to the models without your own API key. The recommended model is **MiMo-v2.6-Flash**.
+**Use a free model (recommended).** OpenCode gives you access to free models through OpenCode Zen, with no API key or payment needed. We recommend **MiMo-V2.6-Flash** or **Nemotron 3.5**. Free models may have rate limits, and their availability can change.
 
-1. Give the lecturer the email address you want to use with OpenCode. You will receive an invitation by email.
-2. Click **Join workspace** in the email and sign in, or create an account, **with the same email address the invitation was sent to**.
-3. Check that the course workspace is selected in the workspace menu.
-
-The invitation expires after 7 days; ask for a new one if it has. Other providers (GitHub Copilot, Anthropic, OpenAI, OpenCode Zen / Go) also work; set a spending limit on any API key you create.
+Other providers (GitHub Copilot, Anthropic, OpenAI, OpenCode Zen / Go) also work, at your own cost; set a spending limit on any API key you create.
 
 ## 4. Install Git and OpenCode
 
@@ -105,8 +101,8 @@ opencode --version   # 2.x
 opencode
 ```
 
-1. Type `/connect`, choose **OpenCode**, and select the **course workspace** in the browser window that opens.
-2. Type `/models` and pick **MiMo-v2.6-Flash**.
+1. Type `/connect`, choose **OpenCode**, and sign in in the browser window that opens.
+2. Type `/models` and pick **MiMo-V2.6-Flash** or **Nemotron 3.5** (both are marked Free).
 
 ## 5. Lovable workspace: skills and knowledge (once)
 
@@ -189,7 +185,7 @@ You are ready. Start with playbook step 1: put your design-thinking material in 
 
 - [ ] GitHub account (and Student Developer Pack applied for)
 - [ ] `git` and `opencode` 2 installed and showing versions
-- [ ] Joined the OpenCode course workspace, `/connect` done, **MiMo-v2.6-Flash** selected in `/models`
+- [ ] OpenCode connected with `/connect`, **MiMo-V2.6-Flash** or **Nemotron 3.5** selected in `/models`
 - [ ] Lovable account created
 - [ ] Six Lovable skills imported, with Auto-use OFF for `harness-init`, `build-story`, `accept-story` and `publish`
 - [ ] Workspace knowledge pasted into Lovable
