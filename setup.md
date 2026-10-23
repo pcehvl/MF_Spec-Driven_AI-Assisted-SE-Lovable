@@ -50,7 +50,7 @@ You act as Product Owner (PO) in both. The agents draft and build; you decide an
 | --- | --- | --- | --- |
 | GitHub | [github.com/signup](https://github.com/signup) | Free | Apply for the [GitHub Student Developer Pack](https://education.github.com/pack) with your student email. |
 | OpenCode | [opencode.ai](https://opencode.ai) | Free with free models | Sign in when you run `/connect` in OpenCode. Paid models are optional and at your own cost. See below. |
-| Lovable | [lovable.dev](https://lovable.dev) | Free plan, or a paid plan for more credits | Every message to Lovable costs credits, including each handover. *[Lecturer: add how students get credits or a shared workspace, if any.]* |
+| Lovable | [lovable.dev](https://lovable.dev) | Free plan, or a paid plan for more credits | Every message to Lovable costs credits, including each handover. |
 
 **Use a free model (recommended).** OpenCode gives you access to free models through OpenCode Zen, with no API key or payment needed. We recommend **MiMo-V2.6-Flash** or **Nemotron 3.5**. Free models may have rate limits, and their availability can change.
 
