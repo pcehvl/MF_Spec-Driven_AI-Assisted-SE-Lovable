@@ -226,7 +226,7 @@ You are ready. Start with playbook step 1: put your design-thinking material in 
 
 **Manual fallback (no MCP).** Ask the Product Assistant for the handover block, copy it and paste it into the Lovable chat in Build mode. For a return, open `acceptance.md` in Lovable's Code view, copy it and paste it into OpenCode.
 
-Still stuck? Post the exact step, the full error text and a screenshot in the course channel.
+Still stuck? Email Per Christian Engdal at [pcen@hvl.no](mailto:pcen@hvl.no) with the exact step, the full error text and a screenshot.
 
 ## Sources
 
