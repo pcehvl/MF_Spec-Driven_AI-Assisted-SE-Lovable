@@ -7,7 +7,7 @@ Course material for the lecture by Asst. Prof. Per Christian Engdal, Western Nor
 
 This track uses the same method as the [main course page](https://pcehvl.github.io/MF_Spec-Driven_AI-Assisted-SE/), but with a different harness: **OpenCode runs the product loop, Lovable runs the execution loop**, and the two are connected through Lovable's MCP server. You write specs in your own repository; Lovable plans, builds, helps you accept and publishes the app.
 
-> **Status:** the Lovable harness is a pre-release (v0.1.0, under testing). Expect small changes.
+> **Found something that doesn't match what you see?** Let me know – email Per Christian Engdal at [pcen@hvl.no](mailto:pcen@hvl.no) with the step and a screenshot.
 
 ---
 
@@ -118,4 +118,4 @@ App code lives in the Lovable project, not in this repo.
 ## Getting help
 
 - Check **Troubleshooting** at the end of the [Setup Guide](setup.md#10-troubleshooting) first.
-- Still stuck? Post the exact step, the full error text and a screenshot of the Lovable chat in the course channel. *[Lecturer: add the link to the course channel / LMS page.]*
+- Still stuck? Email Per Christian Engdal at [pcen@hvl.no](mailto:pcen@hvl.no) with the exact step, the full error text and a screenshot of the Lovable chat.
